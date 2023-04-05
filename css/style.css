@@ -1,6 +1,7 @@
 :root {
     --light-yellow: #F8F8D6;
     --black-green: #2E4347;
+    --medium-green: #54736E;
     --dark-green: #5D7E62;
     --light-green: #D0DEB8;
     --orange: #FF9B52;
@@ -49,21 +50,30 @@ p {
 }
 
 .about-me {
-    background-color: var(--light-yellow);
+    background: var(--light-green); /* agrego esta por si el navegador no es compatible con los gradientes */
+    background: linear-gradient(180deg, var(--light-yellow) 50%, var(--medium-green) 50%);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    
 }
+
+
 .about-me h2 {
     color: var(--orange);
+    font-size: 1.8rem;
+    -webkit-text-stroke: 1px black; /* para hacer los bordes de las letras negro */
+    padding: 20px 0;
 }
 
-.about-me-yellow {
-    background-color: var(--light-yellow);
+.about-me p {
+    font-size: 1rem;
 }
 
-.about-me-green {
-    background-color: var(--dark-green);
-}
-
-.about-half {
+.about-me-text {
     background-color: var(--light-green);
+    width: 85%;
+    padding: 20px;
 }
+
 
