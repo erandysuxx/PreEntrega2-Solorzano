@@ -1,8 +1,69 @@
 :root {
-    --amarillo-claro: #F8F8D6;
-    --verde-negro: #2E4347;
-    --verde-oscuro: #5D7E62;
-    --verde-claro: #D0DEB8;
-    --naranja: #FF9B52;
-    --naranja-suave: #FFB884;
+    --light-yellow: #F8F8D6;
+    --black-green: #2E4347;
+    --dark-green: #5D7E62;
+    --light-green: #D0DEB8;
+    --orange: #FF9B52;
+    --soft-orange: #FFB884;
 }
+/* -------------------------- nav bar  ------------------------------*/
+.navigation-bar {
+    background-color: black !important;
+}
+
+ul a {
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+/* ------------------------- first page -----------------------------*/
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--dark-green);
+    font-size: 3.5rem;
+}
+
+.solorzano {
+    font-size: 2.3rem;
+
+}
+
+.introduction {
+    background-color: var(--light-yellow);
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 65px;
+}
+
+
+/* ----------------------- About me---------------------------------*/
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+p {
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.about-me {
+    background-color: var(--light-yellow);
+}
+.about-me h2 {
+    color: var(--orange);
+}
+
+.about-me-yellow {
+    background-color: var(--light-yellow);
+}
+
+.about-me-green {
+    background-color: var(--dark-green);
+}
+
+.about-half {
+    background-color: var(--light-green);
+}
+
