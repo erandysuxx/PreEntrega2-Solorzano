@@ -80,7 +80,7 @@ p {
 /* ----------------------- Projects ---------------------------------*/
 
 .projects {
-    width: 100vw;
+
     background-color: var(--medium-green);
     display: flex;
     flex-direction: column;
@@ -116,7 +116,7 @@ p {
 }
 
 .orange {
-    background-color: var(--orange);
+    background-color: var(--soft-orange);
 }
 
 .projects img {
@@ -127,7 +127,7 @@ p {
 }
 
 .projects-button {
-    background-color: var(--orange);
+    background-color: var(--soft-orange);
     width: 100%;
     text-align: center;
 }
@@ -139,5 +139,45 @@ p {
     font-family: 'Source Code Pro', monospace;
     margin: 20px;
     padding: 15px 25px;
+}
+
+
+
+/* ------------------------ Contact ----------------------------------*/
+
+.contact {
+    background-color: var(--soft-orange);
+    background-image: url(/img/contact.png);
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+
+.contact form {
+    padding: 7vw;
+    background-color: var(--black-green);
+
+}
+
+.contact input, 
+textarea {
+    width: 70vw;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 2vh;
+    border: none;
+}
+
+.light-green {
+    background-color: var(--light-green);
+}
+
+.submit-button {
+    background-color: var(--light-yellow);
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    font-family: 'Source Code Pro', monospace;
 }
 
