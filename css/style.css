@@ -7,6 +7,7 @@
     --orange: #FF9B52;
     --soft-orange: #FFB884;
 }
+
 /* -------------------------- nav bar  ------------------------------*/
 .navigation-bar {
     background-color: black !important;
@@ -55,7 +56,6 @@ p {
     display: flex;
     justify-content: center;
     padding-bottom: 60px;
-    
 }
 
 
@@ -76,4 +76,68 @@ p {
     padding: 20px;
 }
 
+
+/* ----------------------- Projects ---------------------------------*/
+
+.projects {
+    width: 100vw;
+    background-color: var(--medium-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images {
+    width: 100%;
+    background-color: var(--medium-green);
+
+}
+
+.projects-two {
+    margin-left: 40px;
+}
+
+.projects-three {
+    margin-left: 80px;
+}
+
+.projects h2 {
+    color: var(--light-yellow);
+    margin-left: 15px;
+    padding-top: 40px;
+}
+
+.projects a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content:  center;
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.projects img {
+    height: auto;
+    width: 95%;
+    padding: 40px 10px;
+    filter: grayscale(70%);
+}
+
+.projects-button {
+    background-color: var(--orange);
+    width: 100%;
+    text-align: center;
+}
+
+.projects button {
+    border: none;
+    background-color: var(--light-yellow);
+    border-radius: 30px;
+    font-family: 'Source Code Pro', monospace;
+    margin: 20px;
+    padding: 15px 25px;
+}
 
