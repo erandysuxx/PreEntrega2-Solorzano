@@ -76,6 +76,12 @@ p {
     padding: 20px;
 }
 
+.about-me-page {
+    height: 91.5vh;
+    display: flex;
+    align-items: center;
+}
+
 
 /* ----------------------- Projects ---------------------------------*/
 
@@ -208,6 +214,76 @@ p {
 
 .vh-20 {
     height: 11vh;
+}
+
+/* -------------------------- Projects expanded ------------------------------*/
+.contact-section {
+    margin: 0;
+}
+#grid {
+    box-sizing: border-box;
+    height: 95vh;
+    width: 99vw;
+    display: grid;
+    grid-template-areas: 
+        "title img-one text-one"
+        "title text-two img-two"
+        "title img-three text-three"
+        "title text-four img-four"
+        "nothing nothing-two button";
+    grid-template-columns: 20% 40% 40%;
+}
+
+.grid-title { grid-area: title;}
+.grid-one {grid-area: img-one;}
+.grid-two {grid-area: text-one;}
+.grid-three {grid-area: text-two;}
+.grid-four {grid-area: img-two;}
+.grid-five {grid-area: img-three; }
+.grid-six {grid-area: text-three}
+.grid-seven {grid-area: text-four;}
+.grid-eight {grid-area: img-four;}
+
+.grid-title {
+    background-color: var(--dark-green);
+    color: var(--light-yellow);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin: 0;
+    font-size: 7vw;
+    padding: 60px;
+}
+
+
+
+.left {
+    background-color: var(--dark-green);
+    margin: 0;
+    color: white;
+}
+
+.right {
+    background-color: var(--soft-orange);
+    margin: 0;
+    color: var(--black-green);
+}
+
+#grid img {
+    height: auto;
+    width: 100%;
+    padding: 4vh;
+    margin: 0;
+}
+
+#grid p {
+    
+    font-size: 1.8vw;
+}
+
+#grid img,
+#grid p {
+    display: flex;
+    align-items: center;
 }
 
 /* ------------------------ Contact ----------------------------------*/
