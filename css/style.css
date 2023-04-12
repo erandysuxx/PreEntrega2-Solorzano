@@ -17,14 +17,31 @@ ul a {
     font-family: 'Source Code Pro', monospace;
 }
 
+body {
+    width: 100vw;
+}
 
+* {
+    overflow: scroll;
+}
 /* ------------------------- first page -----------------------------*/
 
 h1 {
     font-family: 'Press Start 2P', cursive;
     color: var(--dark-green);
     font-size: 3.5rem;
+
 }
+
+.intro-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    margin-top: 40vh;
+}
+
+
 
 .solorzano {
     font-size: 2.3rem;
@@ -77,7 +94,7 @@ p {
 }
 
 .about-me-page {
-    height: 91.5vh;
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -144,147 +161,99 @@ p {
     font-family: 'Source Code Pro', monospace;
     margin: 20px;
     padding: 15px 25px;
+}
 
+.hide {
+    display: none;
 }
 
 /* -------------------------- Projects page   ------------------------------*/
 
-.projects-desktop {
-    display: none;
-}
 #projects {
     background-color: var(--dark-green);
 }
-.row-5 img {
-    height: auto;
-    width: 90%;
+
+.pr-button button {
+    background-color: var(--light-yellow);
+    border: none;
+    margin: 40px;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.pr-button {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.pr-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2vh 0;
+}
+
+.pr-title h2 {
+    color: var(--light-yellow);
+    text-align: center;
+    padding: 0;
+
 }
 
 .orange-projects {
     background-color: var(--soft-orange);
 }
-
-.title h2 {
-    color: var(--light-yellow);
-    font-size: 5.5vh;
-
+.projects-page img {
+    max-width: 500px;
+    flex-shrink: 1;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
 }
 
-.title {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    height: 95vh;
-}
-
-.title span {
-    display: block;
-}
-
-.green-projects, .title {
-    background-color: var(--dark-green);
-}
-
-.col-4 {
-    padding: 0;
-}
-
-.col-4 div {
+.projects-page div {
     display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.col-4 button {
-    background-color: var(--light-yellow);
-    border: none;
-    font-family: 'Source Code Pro', monospace;
-    padding: 10px 20px;
-    border-radius: 30px;
-}
-
-.projects-button-desktop {
-    display: flex;
-    justify-content: right;
-    padding-right: 1.5vw;
-}
-
-.vh-40 {
-    height: 40vh;
-}
-
-.vh-20 {
-    height: 11vh;
+    justify-content: center;
 }
 
 /* -------------------------- Projects expanded ------------------------------*/
-.contact-section {
-    margin: 0;
-}
-#grid {
-    box-sizing: border-box;
-    height: 95vh;
-    width: 99vw;
-    display: grid;
-    grid-template-areas: 
-        "title img-one text-one"
-        "title text-two img-two"
-        "title img-three text-three"
-        "title text-four img-four"
-        "nothing nothing-two button";
-    grid-template-columns: 20% 40% 40%;
-}
 
-.grid-title { grid-area: title;}
-.grid-one {grid-area: img-one;}
-.grid-two {grid-area: text-one;}
-.grid-three {grid-area: text-two;}
-.grid-four {grid-area: img-two;}
-.grid-five {grid-area: img-three; }
-.grid-six {grid-area: text-three}
-.grid-seven {grid-area: text-four;}
-.grid-eight {grid-area: img-four;}
-
-.grid-title {
-    background-color: var(--dark-green);
+.pr-left {
     color: var(--light-yellow);
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    margin: 0;
-    font-size: 7vw;
-    padding: 60px;
+    background-color: var(--dark-green);
+    padding-top: 5vh;
+    padding-bottom: 10vh;
 }
 
+.pr-right div,
+.pr-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-
-.left {
+.pr-green {
     background-color: var(--dark-green);
-    margin: 0;
     color: white;
 }
 
-.right {
+.pr-orange {
     background-color: var(--soft-orange);
-    margin: 0;
     color: var(--black-green);
 }
-
-#grid img {
-    height: auto;
-    width: 100%;
-    padding: 4vh;
-    margin: 0;
+.pr-right img {
+    max-width: 500px;
+    padding-bottom: 3vh;
+    padding-top: 5vh;
+    margin-right: 3vw;
 }
 
-#grid p {
-    
-    font-size: 1.8vw;
+.pr-right p {
+    min-width: 300px;
+    max-width: 400px;
 }
 
-#grid img,
-#grid p {
-    display: flex;
-    align-items: center;
-}
+
 
 /* ------------------------ Contact ----------------------------------*/
 
@@ -324,3 +293,92 @@ textarea {
     font-family: 'Source Code Pro', monospace;
 }
 
+/* ------------------------ Contact page ----------------------------------*/
+
+.contact-alone {
+    height: 95vh;
+    padding: 0;
+    align-items: center;
+}
+
+.contact-alone .form-alone {
+    box-sizing: content-box;
+}
+
+
+
+
+
+
+@media(min-width: 800px) {
+    h1 {
+        font-size: 9vw;+
+        
+    }
+
+    .intro-img {
+        margin-top: 10vh;
+        width: 35%;
+    }
+
+    .solorzano {
+        font-size: 8vw;
+    }
+
+
+    /* -------- projects ------------ */
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .images a {
+        min-width: 30vw;
+        max-width: 48vw;
+    }
+
+    .projects h2 {
+        padding: 100px 0 150px;
+    }
+
+    .projects-button {
+        padding-top: 80px;
+    }
+
+    .projects button {
+    width: 25vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    }
+
+    /* ------------ projects page --------- */ 
+    .pr-title {
+        padding:  50px 100px 75px
+    }
+
+ /* ------------ contact ------------- */
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact form {
+        padding: 3rem 2rem;
+        width: 50%;
+    }
+
+    .contact input, 
+    textarea {
+        width: 100%;
+    }
+
+    /* --------- about me page ------- */
+    .about-me-page {
+    height: 100vh;
+    }
+
+    .about-me-text {
+        width: 50%;
+    }
+}
