@@ -21,8 +21,9 @@ body {
     width: 100vw;
 }
 
-* {
-    overflow: scroll;
+
+svg {
+    color: var(--light-yellow);
 }
 /* ------------------------- first page -----------------------------*/
 
@@ -33,13 +34,32 @@ h1 {
 
 }
 
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to { transform: translateX(0);
+    }
+}
+
+
+.intro-img {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+} 
+
 .intro-img {
     position: absolute;
     right: 0;
     top: 0;
     width: 50%;
     margin-top: 40vh;
+
+
 }
+
+
 
 
 
@@ -97,6 +117,7 @@ p {
     height: 100%;
     display: flex;
     align-items: center;
+
 }
 
 
@@ -308,7 +329,11 @@ textarea {
 
 
 
-
+@media(min-width: 1100px) {
+    .about-me-text {
+        width: 50%;
+    }
+}
 
 @media(min-width: 800px) {
     h1 {
@@ -378,7 +403,4 @@ textarea {
     height: 100vh;
     }
 
-    .about-me-text {
-        width: 50%;
-    }
 }
