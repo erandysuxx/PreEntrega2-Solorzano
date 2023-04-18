@@ -1,3 +1,6 @@
+Hola, por alguna razón github no creó bien la pagina, asi que la agrego con otro "servidor" https://rococo-dragon-560156.netlify.app/
+
+
 Consigna
 - Hacer entrega del proyecto (dos páginas a elección) adaptado a la vista mobile y la vista desktop, agregando animaciones. Para generar un diseño responsive utilizar el Grid system de Bootstrap. 
 - La entrega se deberá cargar a un repositorio de GitHub público.
