@@ -1,5 +1,9 @@
-body {
-  background-color: 0;
+.navigation-bar {
+  background-color: black !important;
+}
+
+ul a {
+  font-family: "Source Code Pro", monospace;
 }
 
 /*# sourceMappingURL=style.css.map */
